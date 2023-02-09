@@ -1,0 +1,872 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #2d3742;
+}
+
+
+:root{
+    --Hind:font-family: 'Hind', sans-serif;
+    --Creepster:'Creepster', cursive;;
+}
+
+main{
+    min-height: 100vh;
+    max-width: 1900px;
+    margin: 0 auto;
+}
+
+.header{
+    width: 100%;
+    height: 70px;
+    background-color: #10101081;
+    position: sticky;
+    top: 0;
+    z-index: 100000;
+}
+
+.header::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(12, 12, 12, 0.61);
+    backdrop-filter: blur(0px);
+    filter: blur(3px);
+    z-index: -1;
+}
+
+
+.content-nav{
+    max-width: 1900px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+}
+
+.header-logo{
+    text-decoration: none;
+    color: white;
+    font-size: 1.9rem;
+    font-family: var(--Creepster);
+    filter: drop-shadow(0px 5px 0px rgb(76, 211, 71));
+}
+
+.header-logo:hover{
+    color: white;
+}
+
+.content-menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.header-shop{
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+.header-shop > svg{
+    fill:white ;
+    transition: .4s;
+}
+
+.header-shop > svg:hover{
+    fill: rgb(127, 255, 123);
+}
+
+.buttom-menu{
+    background-color: rgb(76, 211, 71);
+}
+
+.buttom-menu:hover{
+    background-color: rgb(0, 172, 0);
+}
+
+
+.offcanvas{
+    background-color: rgba(0, 0, 0, 0.534);
+    border-bottom: 1px solid rgb(62, 255, 62);
+}
+
+.offcanvas::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(12, 12, 12, 0.61);
+    backdrop-filter: blur(0px);
+    filter: blur(3px);
+
+    z-index: -1;
+}
+
+.buttom-close{
+    background-color: white;
+}
+
+.offcanvas-title{
+    font-size: 1.7rem;
+    font-family: var(--Creepster);
+    margin: 0 auto;
+    color: white;
+    filter: drop-shadow(0px 5px 0px rgb(76, 211, 71));
+}
+
+/* SECTION 1 */
+
+.button-read-more{
+    display: block;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(0, 170, 0);
+    width: 100px;
+    margin: 0 auto;
+    padding: 8px 0;
+    margin-bottom: 10px;
+    border-radius: 2px;
+    transition: .4s;
+}
+
+.button-read-more:hover{
+    color: white;
+    box-shadow: 0 0px 10px rgb(76, 211, 71);
+    background-color: rgb(76, 211, 71);
+}
+
+
+/* SECTION 2 */
+
+.section-2{
+    margin-top: 100px;
+    padding: 0 50px;
+}
+
+.ul-text-1{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+}
+
+.ul-text-1 > li:nth-child(1){
+    font-size: 1.6rem;
+    color: white;
+}
+
+.ul-text-1 > li:nth-child(2){
+    background-color: rgb(60, 67, 75);
+    padding: 15px;
+    border-radius: 40px;
+    font-size: .85rem;
+    transition: .4s;
+}
+
+.ul-text-1 > li:nth-child(2) > a{
+    text-decoration: none;
+    color: white;
+}
+
+.ul-text-1 > li:nth-child(2):hover{
+    background-color: rgb(76, 211, 71);
+}
+
+
+.content-tendence-games{
+    display: grid;
+    height: fit-content;
+    gap: 30px;
+    grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+    padding: 0 0 0  30px;
+    list-style-type: none;
+}
+
+
+.content-tendence-games > li {
+    height: 235px;
+    border-radius: 20px;
+    text-decoration: none;
+    margin: 10px 0;
+    transition: .4s;
+}
+.content-tendence-games li > div {
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.content-tendence-games > li > div > a{
+    display: flex;
+    align-items: end;
+    padding: 15px;
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+
+.content-tendence-games > li > div > a > small{
+    background-color: rgb(76, 211, 71);
+    color: white;
+    padding: 10px 15px;
+    border-radius:  10px  25px 5px 10px;
+}
+
+
+.content-tendence-games > li > div > p {
+    display: flex ;
+    color: white;
+    justify-content: space-between;
+    padding: 0 20px 0 0;
+    font-size: 1.1rem;
+}
+
+
+.content-tendence-games > li > div > p > small{
+    font-size: 1.3rem;
+} 
+
+.content-tendence-games > li:nth-child(1){
+    background-image: url("../assets/images/call-of-duty-modern-warfare.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%, cover;
+}
+
+.content-tendence-games > li:nth-child(2){
+    background-image: url("../assets/images/dead-space-pc-juego-origin-cover.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%, cover;
+}
+
+.content-tendence-games > li:nth-child(3){
+    background-image: url("../assets/images/deliver-us-mars-pc-juego-steam-cover.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%, cover;
+}
+
+.content-tendence-games > li:nth-child(4){
+    background-image: url("../assets/images/destroy-all-humans-2-reprobed-pc-juego-steam-cover.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%, cover;
+}
+
+.content-tendence-games > li:nth-child(5){
+    background-image: url("../assets/images/fifa-23-xbox-one-xbox-one-juego-microsoft-store-cover.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%, cover;
+}
+
+.content-tendence-games > li:nth-child(6){
+    background-image: url("../assets/images/forza-horizon-5-pc-xbox-.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%, cover;
+}
+
+.content-tendence-games > li:nth-child(7){
+    background-image: url("../assets/images/grand-theft-auto-v-pc-juego-rockstar-cover.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%, cover;
+}
+
+.content-tendence-games > li:nth-child(8){
+    background-image: url("../assets/images/resident-evil-village-gold-edition-gold-edition-pc-juego-steam-cover.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%, cover;
+}
+
+.content-tendence-games > li:nth-child(9){
+    background-image: url("../assets/images/wo-long-fallen-dynasty-digital-deluxe-edition-digital-deluxe-edition-pc-juego-steam-cover.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%, cover;
+}
+
+
+.content-tendence-games > li:hover{
+    transform:scale(1.09);
+    box-shadow: 0 0 15px rgb(76, 211, 71);
+    border:  1px solid greenyellow;
+}
+
+.content-tendence-games > li:hover > div > a > small{
+    transition:cubic-bezier(0.075, 0.82, 0.165, 1) .5s;
+    display: none;
+}
+
+
+/* SECTION 3 */
+
+.section-3{
+    margin-top: 100px;
+    padding: 0 50px;
+}
+
+.ul-text-2{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    width: 100%;
+}
+
+.ul-text-2 > li:nth-child(1){
+    font-size: 1.6rem;
+    color: white;
+}
+
+.ul-text-2 > li:nth-child(2){
+    background-color: rgb(60, 67, 75);
+    padding: 15px;
+    border-radius: 40px;
+    font-size: .85rem;
+    transition: .4s;
+}
+
+.ul-text-2 > li:nth-child(2) > a{
+    text-decoration: none;
+    color: white;
+}
+
+.ul-text-2 > li:nth-child(2):hover{
+    background-color: rgb(76, 211, 71);
+}
+
+.content-more-sell{
+    display: grid;
+    height: fit-content;
+    gap: 30px;
+    grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+    padding: 0 0 0  30px;
+    list-style-type: none;
+}
+
+
+
+.content-more-sell> li {
+    height: 235px;
+    border-radius: 20px;
+    text-decoration: none;
+    margin: 10px 0;
+    transition: .4s;
+}
+.content-more-sell li > div {
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.content-more-sell> li > div > a{
+    display: flex;
+    align-items: end;
+    padding: 15px;
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+
+.content-more-sell > li > div > a > small{
+    background-color: rgb(76, 211, 71);
+    color: white;
+    padding: 10px 15px;
+    border-radius:  10px  25px 5px 10px;
+}
+
+
+.content-more-sell > li > div > p {
+    display: flex ;
+    color: white;
+    justify-content: space-between;
+    padding: 0 20px 0 0;
+    font-size: 1.1rem;
+}
+
+
+.content-more-sell> li > div > p > small{
+    font-size: 1.3rem;
+} 
+
+.content-more-sell> li:nth-child(1){
+    background-image: url("../assets/images/dead-space-pc-juego-origin-cover.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%, cover;
+}
+
+.content-more-sell > li:nth-child(2){
+    background-image: url("../assets/images/grand-theft-auto-v-pc-juego-rockstar-cover.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%, cover;
+}
+
+.content-more-sell > li:nth-child(3){
+    background-image: url("../assets/images/fifa-23-xbox-one-xbox-one-juego-microsoft-store-cover.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%, cover;
+}
+
+.content-more-sell > li:nth-child(4){
+    background-image: url("../assets/images/kenshi-pc-juego-steam-cover.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%, cover;
+}
+
+.content-more-sell > li:nth-child(5){
+    background-image: url("../assets/images/resident-evil-3-pc-juego-steam-cover.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%, cover;
+}
+
+.content-more-sell > li:nth-child(6){
+    background-image: url("../assets/images/minecraft-java-y-bedrock-edition-pc-juego-cover.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%, cover;
+}
+
+.content-more-sell > li:nth-child(7){
+    background-image: url("../assets/images/tom-clancy-s-rainbow-six-siege-deluxe-edition-deluxe-edition-pc-juego-ubisoft-connect-europe-cover.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%, cover;
+}
+
+.content-more-sell > li:nth-child(8){
+    background-image: url("../assets/images/7-days-to-die-pc-mac-juego-steam-cover.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%, cover;
+}
+
+.content-more-sell > li:nth-child(9){
+    background-image: url("../assets/images/wo-long-fallen-dynasty-digital-deluxe-edition-digital-deluxe-edition-pc-juego-steam-cover.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%, cover;
+}
+
+
+.content-more-sell > li:hover{
+    transform:scale(1.09);
+    box-shadow: 0 0 15px rgb(76, 211, 71);
+    border:  1px solid greenyellow;
+}
+
+.content-more-sell > li:hover > div > a > small{
+    transition:cubic-bezier(0.075, 0.82, 0.165, 1) .5s;
+    display: none;
+}
+
+
+/* SECTION 4 */
+
+.section-4{
+    margin-top: 100px;
+    padding: 0 40px;
+    background-color: rgba(0, 0, 0, 0.459);
+    position: relative;
+}
+
+.section-4::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.438);
+    backdrop-filter: blur(0px);
+    filter: blur(10px);
+    z-index: -1;
+    opacity: .5;
+}
+
+
+.section-4 > div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    width: 100%;
+    padding: 30px 0;
+}
+
+
+.section-4 > div > div {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-around;
+    width: 300px;
+}
+
+.section-4 > div > div > img{
+    width: 90px;
+    display: block;
+}
+
+.section-4 > div > div > p{
+    margin: auto 0;
+}
+
+
+
+/* SECTION 5 */
+
+.section-5{
+    margin-top: 150px;
+    padding: 0 50px;
+}
+
+.ul-text-3{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    width: 100%;
+}
+
+.ul-text-3 > li:nth-child(1){
+    font-size: 1.6rem;
+    color: white;
+}
+
+.ul-text-3 > li:nth-child(2){
+    background-color: rgb(60, 67, 75);
+    padding: 15px;
+    border-radius: 40px;
+    font-size: .85rem;
+    transition: .4s;
+}
+
+.ul-text-3 > li:nth-child(2) > a{
+    text-decoration: none;
+    color: white;
+}
+
+.ul-text-3 > li:nth-child(2):hover{
+    background-color: rgb(76, 211, 71);
+}
+
+
+.content-top-indie{
+    display: grid;
+    height: fit-content;
+    gap: 30px;
+    grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+    padding: 0 0 0  30px;
+    list-style-type: none;
+}
+
+
+
+.content-top-indie> li {
+    height: 235px;
+    border-radius: 20px;
+    text-decoration: none;
+    margin: 10px 0;
+    transition: .4s;
+}
+.content-top-indie li > div {
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.content-top-indie> li > div > a{
+    display: flex;
+    align-items: end;
+    padding: 15px;
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+
+.content-top-indie > li > div > a > small{
+    background-color: rgb(76, 211, 71);
+    color: white;
+    padding: 10px 15px;
+    border-radius:  10px  25px 5px 10px;
+}
+
+
+.content-top-indie > li > div > p {
+    display: flex ;
+    color: white;
+    justify-content: space-between;
+    padding: 0 20px 0 0;
+    font-size: 1.1rem;
+}
+
+
+.content-top-indie> li > div > p > small{
+    font-size: 1.3rem;
+} 
+
+.content-top-indie> li:nth-child(1){
+    background-image: url("../assets/images/cuphead.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%, cover;
+}
+
+.content-top-indie > li:nth-child(2){
+    background-image: url("../assets/images/hellblade.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%, cover;
+}
+
+.content-top-indie > li:nth-child(3){
+    background-image: url("../assets/images/hollow.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%, cover;
+}
+
+.content-top-indie > li:nth-child(4){
+    background-image: url("../assets/images/terraria.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%, cover;
+}
+
+.content-top-indie > li:nth-child(5){
+    background-image: url("../assets/images/dead-cell.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%, cover;
+}
+
+.content-top-indie > li:nth-child(6){
+    background-image: url("../assets/images/isaac.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%, cover;
+}
+
+.content-top-indie > li:nth-child(7){
+    background-image: url("../assets/images/outlas.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%, cover;
+}
+
+.content-top-indie > li:nth-child(8){
+    background-image: url("../assets/images/nigth.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%, cover;
+}
+
+.content-top-indie > li:nth-child(9){
+    background-image: url("../assets/images/hades.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%, cover;
+}
+
+
+.content-top-indie > li:hover{
+    transform:scale(1.09);
+    box-shadow: 0 0 15px rgb(76, 211, 71);
+    border:  1px solid greenyellow;
+}
+
+.content-top-indie > li:hover > div > a > small{
+    transition:cubic-bezier(0.075, 0.82, 0.165, 1) .5s;
+    display: none;
+}
+
+
+/* FOOTER */
+
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 200px;
+    padding: 50px 20px;
+    background-color: rgba(0, 0, 0, 0.411);
+    color: white;
+    position: relative;
+}
+
+
+.footer::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(0px);
+    filter: blur(3px);
+    background-color: rgba(5, 5, 5, 0.493);
+    opacity: .8;
+    z-index: -1;
+}
+
+
+.footer > a{
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+    font-family: var(--Creepster);
+    filter: drop-shadow(0px 5px 0px rgb(76, 211, 71));
+}
+
+.footer > a:hover{
+    color: white;
+} 
+
+.content-terms > a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    margin-top: 10px;
+    transition: .4s;
+}
+
+.content-terms > a:hover {
+    color: rgb(155, 255, 125);
+}
+
+
+.content-social > div:nth-child(1) {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+
+.content-social > div:nth-child(1) > a{
+    display: block;
+    padding: 10px;
+    border-radius: 50%;
+    transition: .4s;
+}
+
+.content-social > div:nth-child(1) > a > svg {
+    border-radius: 50%;
+    fill: white;
+}
+
+.content-social > div:nth-child(1) > a:nth-child(1):hover{
+    background-color: royalblue;
+}
+
+
+.content-social > div:nth-child(1) > a:nth-child(2):hover > svg{
+    fill: rgb(34, 255, 255);
+}
+
+
+.content-social > div:nth-child(1) > a:nth-child(2):hover{
+    background-color: rgb(252, 252, 252);
+}
+
+
+.content-social > div:nth-child(1) > a:nth-child(3):hover{
+    background-image: linear-gradient(-225deg, #231557 0%, #44107A 29%, #FF1361 67%, #FFF800 100%);
+}
+
+
+.content-social > div:nth-child(1) > a:nth-child(4):hover{
+    background-color: rgb(113, 255, 47);
+}
+
+
+.content-social > div:nth-child(2){
+    margin-top: 40px;
+}
+
+.content-social > div:nth-child(2) > div{
+    margin: auto;
+    width: 200px;
+}
+.content-social > div:nth-child(2) > div:nth-child(2){
+    margin-top: 10px;
+    width: 185px;
+}
+
+.content-social > div:nth-child(2) > div > img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .4s;
+    cursor: pointer;
+}
+
+ 
+
+
+@media (max-width:900px){
+    /* SECTION 4 */
+
+    .section-4 > div{
+        flex-wrap: wrap;
+        gap: 20px 0;
+    }
+
+
+}
+
+
+@media (max-width:735px){
+    /* SECTION 2 */
+    .ul-text-1{
+        padding: 0;
+    }
+    .content-tendence-games{
+        gap: 50px;
+        grid-template-columns: repeat(auto-fill, minmax(15.375rem, 1fr));
+        padding: 0;
+    }
+
+
+    /* SECTION 3 */
+    .ul-text-2{
+        padding: 0;
+    }
+    .content-more-sell{
+        gap: 50px;
+        grid-template-columns: repeat(auto-fill, minmax(15.375rem, 1fr));
+        padding: 0;
+    }
+
+
+    /* SECTION 5 */
+    .ul-text-3{
+        padding: 0;
+    }
+    .content-top-indie{
+        gap: 50px;
+        grid-template-columns: repeat(auto-fill, minmax(15.375rem, 1fr));
+        padding: 0;
+    }
+}
+
+@media (max-width:679px){
+    /* SECTION 4 */
+
+    .section-4 > div{
+        gap: 30px 0;
+        justify-content: center;
+    }
+
+
+    /* FOOTER */
+
+    .footer{
+        flex-direction: column;
+        align-items: center;
+        gap: 50px 0;
+    }
+}
+
+
