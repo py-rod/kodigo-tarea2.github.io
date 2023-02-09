@@ -20,9 +20,10 @@
 
 <body>
     <header class="header">
-        <div class="content-nav">
-            <a href="" class="header-logo">OnlyGames</a>
-            <div class="content-menu">
+        <nav class="navbar">
+            <div class="container-fluid">
+              <a class="navbar-brand header-logo" href="#">OnlyGames</a>
+              <div class="content-menu">
 
                 <a href="" class="header-shop"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M21.822 7.431A1 1 0 0 0 21 7H7.333L6.179 4.23A1.994 1.994 0 0 0 4.333 3H2v2h2.333l4.744 11.385A1 1 0 0 0 10 17h8c.417 0 .79-.259.937-.648l3-8a1 1 0 0 0-.115-.921zM17.307 15h-6.64l-2.5-6h11.39l-2.25 6z"></path><circle cx="10.5" cy="19.5" r="1.5"></circle><circle cx="17.5" cy="19.5" r="1.5"></circle></svg></a>
 
@@ -40,11 +41,19 @@
                         <button type="button" class="btn-close buttom-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body">
-                       .. .
+                       <div class="header-content-links">
+                            <a href="">Login</a>
+                            <a href="">Registro</a>
+                            <a href="">Profile</a>
+                            <a href="">Categorias</a>
+                       </div>
                     </div>
                 </div>
             </div>
-        </div>
+            </div>
+          </nav>
+
+
     </header>
 
 
@@ -281,7 +290,7 @@
 
         <section class="section-5">
             <ul class="ul-text-3">
-                <li>Top juegos indie</li>
+                <li>Top indie</li>
                 <li><a href="">Ver todo</a></li>
             </ul>
 
@@ -402,3 +411,32 @@
         crossorigin="anonymous"></script>
 </body>
 </html>
+
+<!-- 
+<header class="header">
+        <div class="content-nav">
+            <a href="" class="header-logo">OnlyGames</a>
+            <div class="content-menu">
+
+                <a href="" class="header-shop"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M21.822 7.431A1 1 0 0 0 21 7H7.333L6.179 4.23A1.994 1.994 0 0 0 4.333 3H2v2h2.333l4.744 11.385A1 1 0 0 0 10 17h8c.417 0 .79-.259.937-.648l3-8a1 1 0 0 0-.115-.921zM17.307 15h-6.64l-2.5-6h11.39l-2.25 6z"></path><circle cx="10.5" cy="19.5" r="1.5"></circle><circle cx="17.5" cy="19.5" r="1.5"></circle></svg></a>
+
+                <button class="btn buttom-menu" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><svg
+                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        style="fill: rgb(255, 255, 255);">
+                        <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path>
+                    </svg></button>
+
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                    aria-labelledby="offcanvasRightLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasRightLabel">OnlyGames</h5>
+                        <button type="button" class="btn-close buttom-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                       .. .
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header> -->
