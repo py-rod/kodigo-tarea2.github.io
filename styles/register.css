@@ -1,0 +1,274 @@
+@import url("https://fonts.googleapis.com/css2?family=Hind:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Creepster&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #2d3742;
+}
+
+:root {
+  --Hind: "Hind", sans-serif;
+  --Creepster: "Creepster", cursive;
+}
+
+main {
+  min-height: 85vh;
+  max-width: 1900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.header {
+  width: 100%;
+  height: 70px;
+  background-color: #10101081;
+  position: sticky;
+  top: 0;
+  z-index: 100000;
+}
+
+.header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(12, 12, 12, 0.61);
+  backdrop-filter: blur(0px);
+  filter: blur(3px);
+  z-index: -1;
+}
+
+.navbar {
+  max-width: 1900px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+}
+
+.header-logo {
+  text-decoration: none;
+  color: white;
+  font-size: 1.9rem;
+  font-family: var(--Creepster);
+  filter: drop-shadow(0px 5px 0px rgb(76, 211, 71));
+}
+
+.header-logo:hover {
+  color: white;
+}
+
+.content-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.header-shop {
+  display: block;
+  color: white;
+  text-decoration: none;
+}
+
+.header-shop > svg {
+  fill: white;
+  transition: 0.4s;
+}
+
+.header-shop > svg:hover {
+  fill: rgb(127, 255, 123);
+}
+
+.buttom-menu {
+  background-color: rgb(76, 211, 71);
+}
+
+.buttom-menu:hover {
+  background-color: rgb(0, 172, 0);
+}
+
+.offcanvas {
+  background-color: rgba(0, 0, 0, 0.534);
+  border-bottom: 1px solid rgb(62, 255, 62);
+}
+
+.offcanvas::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(12, 12, 12, 0.61);
+  backdrop-filter: blur(0px);
+  filter: blur(3px);
+
+  z-index: -1;
+}
+
+.buttom-close {
+  background-color: white;
+}
+
+.offcanvas-title {
+  font-size: 1.7rem;
+  font-family: var(--Creepster);
+  margin: 0 auto;
+  color: white;
+  filter: drop-shadow(0px 5px 0px rgb(76, 211, 71));
+}
+
+.header-content-links > a {
+  display: block;
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+  text-decoration: none;
+  padding: 10px 0;
+  --clippy: polygon(44% 37%, 45% 37%, 45% 36%, 44% 38%);
+}
+
+.header-content-links > a::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 100%;
+  background-color: greenyellow;
+  clip-path: var(--clippy);
+  transition: 0.5s;
+}
+
+.header-content-links > a:hover {
+  --clippy: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+/* SECTION 1 */
+
+.section-1 {
+  height: 100%;
+  width: 100%;
+  padding: 55px 30px 30px;
+}
+
+.section-1 > form {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #0000006b;
+  border-radius: 20px;
+  padding: 40px;
+  position: relative;
+  box-shadow: 0 0 8px greenyellow;
+}
+
+.section-1 > form::before {
+  content: "";
+  background-color: rgba(41, 41, 41, 0.315);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 20px;
+  z-index: -1;
+  backdrop-filter: blur(0px);
+  filter: blur(3px);
+}
+
+.form {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 30px 30px 20px;
+  color: white;
+}
+
+.form > input {
+  margin-top: 20px;
+}
+
+.form > input::placeholder {
+  color: rgb(202, 202, 202);
+}
+
+.form > input {
+  background-color: rgb(49, 49, 49);
+  border: 2px solid rgb(75, 75, 75);
+  outline: none;
+  box-shadow: none;
+}
+
+.form > input:focus {
+  background-color: rgb(49, 49, 49);
+  outline: none;
+  color: white;
+  outline: 2px solid rgb(0, 172, 0);
+  border: 2px solid rgb(0, 172, 0);
+  box-shadow: none;
+}
+
+.form > input:hover {
+  border: 2px solid rgb(0, 172, 0);
+}
+
+.buttom-register {
+  margin-top: 30px;
+  width: 100%;
+  padding: 10px 0;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  color: white;
+  background-color: rgb(0, 172, 0);
+  transition: 0.3s;
+}
+
+.buttom-register:hover {
+  background-color: rgb(67, 207, 62);
+}
+
+.form > div {
+  margin-top: 20px;
+}
+
+.form > div > a {
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  font-size: 0.9rem;
+  transition: 0.3s;
+}
+
+.form > div > a:hover {
+  color: rgb(98, 255, 98);
+}
+
+
+@media (max-width: 455px) {
+  .form > div > a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-size: 0.8rem;
+    transition: 0.3s;
+  }
+
+  .form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 30px 20px 20px;
+    color: white;
+  }
+}

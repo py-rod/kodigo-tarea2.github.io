@@ -17,16 +17,14 @@ body {
 }
 
 main {
-  min-height: 85vh;
+  min-height: 80vh;
   max-width: 1900px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  overflow: hidden;
+  align-items: center;
+  padding: 50px 30px;
 }
-
-/* HEADER */
 
 .header {
   width: 100%;
@@ -157,156 +155,96 @@ main {
   --clippy: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
 
-/* SECTION 1 */
-
 .section-1 {
-  height: 100%;
   width: 100%;
-  padding: 55px 30px 30px;
 }
 
-.section-1 > div {
-  max-width: 600px;
+.content-profile {
+  padding: 50px 40px;
+  background-color: rgba(0, 0, 0, 0.534);
+  color: white;
+  max-width: 800px;
   margin: 0 auto;
-  background-color: #0000006b;
-  border-radius: 20px;
-  padding: 40px 0;
+  border-radius: 8px;
   position: relative;
-  box-shadow: 0 0 8px greenyellow;
 }
 
-.section-1 > div::before {
+.content-profile::before {
   content: "";
-  background-color: rgba(41, 41, 41, 0.315);
-  position: absolute;
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
-  border-radius: 20px;
+  position: absolute;
   z-index: -1;
-  backdrop-filter: blur(0px);
-  filter: blur(3px);
+  background-color: rgba(12, 12, 12, 0.61);
+  border-radius: 8px;
 }
 
-.section-1 > div > p {
-  text-align: center;
-  color: white;
-  font-size: 1.3rem;
-}
-
-.content-social-login {
+.content-picture-profile {
+  width: 100%;
   display: flex;
-  justify-content: center;
-  gap: 20px;
-  padding: 20px;
-  border-bottom: 1px solid gray;
+  align-items: center;
+  gap: 30px;
 }
 
-.content-social-login > div {
-  width: 150px;
-  height: 100%;
-  border-radius: 5px;
-}
-
-.content-social-login > div > a {
+.content-picture-profile > img {
   display: block;
-  text-decoration: none;
-  background-color: royalblue;
-  height: 100%;
-  width: 100%;
-  text-align: center;
-  border-radius: 5px;
-  padding: 5px 0;
+  width: 130px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
-.content-social-login > div:nth-child(2) > a {
-  background-color: white;
+.content-picture-profile > p {
+  font-size: 1.17rem;
 }
 
-.form {
-  max-width: 500px;
-  margin: 0 auto;
-  padding: 30px 30px 20px;
-  color: white;
-}
-
-.form > input {
-  margin-top: 20px;
-}
-
-.form > input::placeholder {
-  color: rgb(202, 202, 202);
-}
-
-.form > input {
-  background-color: rgb(49, 49, 49);
-  border: 2px solid rgb(75, 75, 75);
-  outline: none;
-  box-shadow: none;
-}
-
-.form > input:focus {
-  background-color: rgb(49, 49, 49);
-  outline: none;
-  color: white;
-  outline: 2px solid rgb(0, 172, 0);
-  border: 2px solid rgb(0, 172, 0);
-  box-shadow: none;
-}
-
-.form > input:hover {
-  border: 2px solid rgb(0, 172, 0);
-}
-
-.buttom-login {
-  margin-top: 30px;
-  width: 100%;
-  padding: 10px 0;
-  border: none;
-  outline: none;
-  border-radius: 5px;
-  color: white;
-  background-color: rgb(0, 172, 0);
-  transition: 0.3s;
-}
-
-.buttom-login:hover {
-  background-color: rgb(67, 207, 62);
-}
-
-.form > div {
+.content-profile > div:nth-child(2) {
   display: flex;
   justify-content: space-between;
-  margin-top: 20px;
-  gap: 10px;
+  gap: 20px;
+  width: 100%;
+  margin-top: 40px;
 }
 
-.form > div > a {
+.list-group {
+  width: 50%;
+}
+
+.list-group-item {
   color: white;
-  text-decoration: none;
-  text-align: center;
-  font-size: 0.9rem;
+  background-color: #2d3742;
   transition: 0.3s;
 }
 
-.form > div > a:hover {
-  color: rgb(98, 255, 98);
+.list-group-item:hover {
+  color: white;
+  background-color: rgb(76, 211, 71);
 }
 
-@media (max-width: 455px) {
-  .form > div > a {
-    color: white;
-    text-decoration: none;
-    text-align: center;
-    font-size: 0.8rem;
-    transition: 0.3s;
+@media (max-width: 657px) {
+  .content-picture-profile > p {
+    font-size: 1rem;
   }
 
-  .form {
-    max-width: 500px;
-    margin: 0 auto;
-    padding: 30px 20px 20px;
-    color: white;
+  .content-profile > div:nth-child(2) {
+    flex-direction: column;
+  }
+
+  .list-group {
+    width: 100%;
+  }
+}
+
+@media (max-width: 551px) {
+  .content-picture-profile {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .content-picture-profile > p {
+    font-size: .9rem;
   }
 }

@@ -14,7 +14,7 @@ body{
 
 
 :root{
-    --Hind:font-family: 'Hind', sans-serif;
+    --Hind:'Hind', sans-serif;
     --Creepster:'Creepster', cursive;;
 }
 
